@@ -6,10 +6,10 @@ import TeamMember from './TeamMember/TeamMember';
 const Home = () => {
   return (
     <div className='main-section flex'>
-      <div className='min-h-screen bg-blue-gray-50/50 w-64'>
+      <div className='bg-blue-gray-50/50 w-64'>
         <SideNav routes={routes} />
       </div>
-      <div className='container'>
+      <div className='container h-screen'>
         <TeamMember />
       </div>
     </div>
