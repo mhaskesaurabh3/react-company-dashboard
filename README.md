@@ -1,7 +1,23 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+View the project <a href="https://react-company-dashboard.vercel.app/" target="_blank">Click here</a>
 
+
+<ul>
+<li>This Project Is Made Using React With Typescript And Tailwind For Css.</li>
+<li>Team Member Details Were Stored In A Regular Array Of Objects.</li>
+<li>Searching Functionality Was Added To The Project.</li>
+<li>Dark Mode Feature Was Added To The Application.</li>
+<li>Routing Was Enabled, But I Have Commented On The Code Due To Issues In The Dark Mode. You Can Uncomment It At The Home.tsx Page.</li>
+</ul>
+
+<h3>Things That Could Have Been Improved In This Project</h3>
+
+<ul>
+<li>Some Styling Is Missing In The Project Due To Lack Of Time.</li>
+<li>Applications Could Have Been More Responsive In Terms Of Design.</li>
+<li>There Are Some More Edge Cases That I Have Missed Due To Time Constraints.</li>
+</ul>
 ## Available Scripts
 
 In the project directory, you can run:
