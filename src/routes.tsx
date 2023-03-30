@@ -1,10 +1,10 @@
-import Home from './Components/Pages/Home';
-import UserIcon from './assets/UserIcon.png';
-import ProductIcon from './assets/ProductIcon.png';
-import InboxIcon from './assets/InboxIcon.png';
+import Home from '../src/Components/Pages/Home/Home';
+import UserIcon from './assets/UserIcon.svg';
+import ProductIcon from './assets/ProductIcon.svg';
+import InboxIcon from './assets/InboxIcon.svg';
 import TeamMember from './Components/Pages/TeamMember/TeamMember';
-import Product from './Components/Pages/Product';
-import Inbox from './Components/Pages/Inbox';
+import Product from './Components/Pages/ProductPage/Product';
+import Inbox from './Components/Pages/InboxPage/Inbox';
 
 // const icon = {
 //   className: 'w-5 h-5 text-inherit',
@@ -22,7 +22,7 @@ export const routes: Route[] = [
     icon: <UserIcon />,
     name: 'Team Members',
     path: '/team-member',
-    element: <TeamMember />,
+    element: <TeamMember darkMode={undefined} setDarkMode={undefined} />,
   },
   {
     icon: <ProductIcon />,
