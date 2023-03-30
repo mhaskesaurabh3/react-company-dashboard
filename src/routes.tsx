@@ -1,5 +1,5 @@
 import Home from '../src/Components/Pages/Home/Home';
-import UserIcon from './assets/UserIcon.svg';
+import UserIcon from './assets/UserIcon.png';
 import ProductIcon from './assets/ProductIcon.svg';
 import InboxIcon from './assets/InboxIcon.svg';
 import TeamMember from './Components/Pages/TeamMember/TeamMember';
@@ -22,7 +22,7 @@ export const routes: Route[] = [
     icon: <UserIcon />,
     name: 'Team Members',
     path: '/team-member',
-    element: <TeamMember darkMode={undefined} setDarkMode={undefined} />,
+    element: <TeamMember darkMode={false} />,
   },
   {
     icon: <ProductIcon />,

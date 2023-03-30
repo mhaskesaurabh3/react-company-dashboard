@@ -15,15 +15,6 @@ const SideNav = (props: SideNavProps) => {
   const [active, setactive] = useState('');
 
   const { routes, darkMode, setDarkMode } = props;
-  useEffect(() => {
-    console.log('routes', routes);
-    console.log(darkMode);
-  }, [darkMode]);
-
-  const handleClick = (name: string) => {
-    console.log('Name', name);
-    setactive(name);
-  };
 
   const handleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -45,12 +36,15 @@ const SideNav = (props: SideNavProps) => {
                     <NavLink to={route.path}>
                       <a
                         // href={route.path}
-                        onClick={() => handleClick(route.name)}
                         className={`flex items-center p-2 space-x-3 rounded-md ${
                           darkMode ? 'text-white' : 'text-black'
                         } focus:text-white focus-within:bg-purple focus:bg-purple active:bg-purple active:text-white`}
                       >
-                        <img src={route.icon.type} alt={route.name} />
+                        <img
+                          className='w-6 h-6'
+                          src={route.icon.type}
+                          alt={route.name}
+                        />
                         <span>{route.name}</span>
                       </a>
                     </NavLink>

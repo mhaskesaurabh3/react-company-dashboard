@@ -23,7 +23,7 @@ const Home = () => {
             <Route path={elem.path} element={elem.element} />
           ))}
         </Routes> */}
-        <TeamMember darkMode={darkMode} setDarkMode={setDarkMode} />
+        <TeamMember darkMode={darkMode} />
       </div>
     </div>
   );

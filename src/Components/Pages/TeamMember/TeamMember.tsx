@@ -4,15 +4,14 @@ import { teamDetails } from '../../../TeamDetails';
 import SearchIcon from '../../../assets/SearchIcon.png';
 
 type TeamMemberProps = {
-  darkMode: any;
-  setDarkMode: any;
+  darkMode: boolean;
 };
 
 const TeamMember = (props: TeamMemberProps) => {
   const [memberDetail] = useState(teamDetails);
   const [filteredMemberData, setFilteredMemberData] = useState(teamDetails);
 
-  const { darkMode, setDarkMode } = props;
+  const { darkMode } = props;
 
   const handleClick = (e: React.ChangeEvent<HTMLInputElement>) => {
     // filter function
@@ -21,13 +20,6 @@ const TeamMember = (props: TeamMemberProps) => {
       return detail.name.toLowerCase().includes(searchedValue.toLowerCase());
     });
     setFilteredMemberData(searchedWord);
-    if (!searchedWord) {
-      setFilteredMemberData([]);
-    } else {
-      setFilteredMemberData(searchedWord);
-    }
-
-    console.log('filteredMemberData', filteredMemberData);
   };
 
   return (
